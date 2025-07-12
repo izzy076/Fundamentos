@@ -1,0 +1,46 @@
+/* ESTO ES UN COMENTARIO DE CSS */
+/* 
+ASCII PARA {}
+ALT + 123
+*/
+
+/* css -> Hoja de estilos en cascada */
+/* ESPECIFICIDAD */
+
+/* Regla de estilo */
+/* 
+  SELECTORES:
+  1. Etiquetas -> menos específicas
+  2. Clase -> especificidad media -> .clase
+  3. Identificador único -> especificidad más alta -> */
+
+body {
+    background-color: rgb(179, 196, 218);
+
+}
+
+h1 {
+    text-align: center;
+    color: rgb(15, 21, 110);
+}
+
+p {
+    background-color: rgb(181, 111, 209);
+}
+
+.parrafo-1 {
+    background-color: rgb(133, 131, 226);
+    /* tamaño de letra */
+    font-size: 20px;
+    
+}
+
+.parrafoLargo {
+    background-color: rgb(190, 97, 155);
+    
+}
+
+/* id -> se utilicen en js -> asociaciones entre elementos */
+#titulo{
+    font-size: 30px;
+}
