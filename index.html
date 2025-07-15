@@ -13,61 +13,85 @@
 <!-- 1. !
       2. html:5
       -->
+<!-- un párrafo normal -> lorem -->
+
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- configuraciones principales de nuestra página -->
+    <!-- A poder usar caracteres especiales -->
+    <meta charset="UTF-8" />
+    <!-- Visualizar nuestra página desde diferentes dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <!-- configuraciones principales de nuestra página -->
-  <!-- A poder usar caracteres especiales -->
-  <meta charset="UTF-8">
-  <!-- Visualizar nuestra página desde diferentes dispositivos -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos</title>
 
-  <title>Fundamentos</title>
+    <!-- Estilos de mi página -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <!-- Estilos de mi página -->
-  <link rel="stylesheet" href="styles.css">
+  <body>
+    <!-- Oontenido de nuestro sitio web -->
+    <!-- ETIQUETAS PRINCIPALES -->
 
+    <!-- Etiquetas semánticas -->
 
-</head>
+    <!-- encabezado -->
+    <header>
 
-<body>
-  <!-- Oontenido de nuestro sitio web -->
-  <!-- ETIQUETAS PRINCIPALES -->
+      <!-- Titulos -->
+      <h1>Fundamentos de desarrollo web</h1>
+      <!-- Esto una sola vez -->
+      <h2>Titulo secundario</h2>
+      <h3 class="parrafo-1">subtitulo</h3>
+      <h4 id="titulo">Titulo 4</h4>
+      <h5>Titulo 5</h5>
+      <h6 id="titulo">Titulo 6</h6>
 
-  <!-- Titulos -->
-  <h1>Fundamentos de desarrollo web</h1>
-  <!-- Esto una sola vez -->
-  <h2>Titulo secundario</h2>
-  <h3 class="parrafo-1">subtitulo</h3>
-  <h4 id="titulo">Titulo 4</h4>
-  <h5>Titulo 5</h5>
-  <h6 id="titulo">Titulo 6</h6>
+    </header>
 
-  <!-- ----------------- -->
-  <p class="parrafo-1">Esto es un párrafo: un texto largo Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Culpa, architecto. Obcaecati accusamus aperiam fugit consequatur, dolorem, itaque reprehenderit praesentium sapiente
-    corrupti recusandae omnis quod perspiciatis sit quasi hic ratione cum?</p>
+    <!-- contenido -->
+    <main>
 
-  <!-- parrafoLargo -> camelCase  -->
+      <!-- ----------------- -->
+      <p class="parrafo-1">
+        Esto es un párrafo: un texto largo Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Culpa, architecto. Obcaecati accusamus
+        aperiam fugit consequatur, dolorem, itaque reprehenderit praesentium
+        sapiente corrupti recusandae omnis quod perspiciatis sit quasi hic
+        ratione cum?
+      </p>
 
-  <p class="parrafoLargo">Parrafo largo: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eius
-    perferendis voluptatum nemo consequuntur earum tempore ad eos nisi molestias nam, provident quam dicta rem et vel
-    reprehenderit voluptates recusandae?
-    Perferendis nesciunt saepe error beatae dicta quis perspiciatis repellat sed voluptas reprehenderit, facilis nostrum
-    adipisci soluta minus eaque eum? Nemo explicabo a iure numquam, commodi quasi qui debitis autem nisi.
-    Voluptas, ab. Omnis veritatis molestias earum expedita ad. Nam dolores distinctio aperiam vitae unde enim,
-    consequatur ipsam doloremque maxime dolor debitis nobis iure nostrum optio aut obcaecati ex rerum cumque.
-    Saepe ipsum deleniti tempora! Dolorum porro, magni nulla architecto odit consequatur aliquam, rem voluptatibus
-    quibusdam quod minima veritatis vero atque error? Est, eligendi quidem! Inventore fugiat cum fuga doloribus vel.
-    Aliquam odit quam ea, explicabo ad dolorum voluptatem modi aperiam veniam rerum voluptatum eveniet omnis, quibusdam,
-    cumque voluptas illo. Facere nostrum placeat perferendis dolores, dolorem ipsum atque quidem. Neque, modi.</p>
+      <!-- parrafoLargo -> camelCase  -->
 
-  <p>Parrafo corto: Lorem ipsum dolor sit amet.</p>
+      <p class="parrafoLargo">
+        Parrafo largo: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Natus eius perferendis voluptatum nemo consequuntur earum tempore ad eos
+        nisi molestias nam, provident quam dicta rem et vel reprehenderit
+        voluptates recusandae? Perferendis nesciunt saepe error beatae dicta
+        quis perspiciatis repellat sed voluptas reprehenderit, facilis nostrum
+        adipisci soluta minus eaque eum? Nemo explicabo a iure numquam, commodi
+        quasi qui debitis autem nisi. Voluptas, ab. Omnis veritatis molestias
+        earum expedita ad. Nam dolores distinctio aperiam vitae unde enim,
+        consequatur ipsam doloremque maxime dolor debitis nobis iure nostrum
+        optio aut obcaecati ex rerum cumque. Saepe ipsum deleniti tempora!
+        Dolorum porro, magni nulla architecto odit consequatur aliquam, rem
+        voluptatibus quibusdam quod minima veritatis vero atque error? Est,
+        eligendi quidem! Inventore fugiat cum fuga doloribus vel. Aliquam odit
+        quam ea, explicabo ad dolorum voluptatem modi aperiam veniam rerum
+        voluptatum eveniet omnis, quibusdam, cumque voluptas illo. Facere
+        nostrum placeat perferendis dolores, dolorem ipsum atque quidem. Neque,
+        modi.
+      </p>
 
+      <p>Parrafo corto: Lorem ipsum dolor sit amet.</p>
 
+    </main>
 
-</body>
-
+    <!-- pie de página -->
+    <footer>
+      <p>Creado por BIT</p>
+    </footer>
+  </body>
 </html>
