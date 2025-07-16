@@ -2,51 +2,144 @@
 <html lang="es">
 
 </html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos 2 </title>
     <link rel="stylesheet" href="./fundamentos.css">
 </head>
+
 <body>
     <!--  MAQUETAR NUESTRA PÁGINA  -->
 
     <!-- Encabezado -->
-     <header>
+    <header>
 
         <!-- Menú de navegación -->
-         <nav>
-         <!-- listas -->
-          <!-- listas ordenadas -->
-           <ol>
-           <li>Qué es HTML</li>  <!-- list item -->
-           <li>Semántica</li>
-           <li>Etiquetas básicas</li>
-           </ol>
+        <nav>
+            <!-- listas -->
+            <!-- listas ordenadas -->
+            <ol>
+                <li>Qué es HTML</li> <!-- list item -->
+                <li>Semántica</li>
+                <li>Etiquetas básicas</li>
+            </ol>
 
-           <!-- imagenes -->
+            <!-- imagenes -->
             <!-- webp - svg  -->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
+                alt="logo">
 
             <!-- listas desordenadas -->
-             <ul>
+            <ul>
                 <li>Formularios</li>
-               <li>Tablas</li>
-               <li>Enlaces</li>
-             </ul>
+                <li>Tablas</li>
+                <li>Enlaces</li>
+            </ul>
 
-         </nav>
+        </nav>
 
-     </header>
+    </header>
 
-     <!-- main -->
-      <main>
+    <!-- main -->
+    <main>
+        <section class="contenedor" id="que-es-html">
+            <h2>¿ Qué es el HTML?</h2>
+            <P>Lenguaje de Marcado que estructura el contenido de una página web. Basado en etiquetas que pueden ser
+                semánticas o no semánticas </P>
 
-      </main>
+            <span>¡No es un lenguaje de programación!</span>
+        </section>
 
-      <!-- pie de página -->
-       <footer>
+        <section class="contenedor" id="semantica">
+            <h2>Semántica en HTML</h2>
+            <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2023/01/html-vs-html5.webp"
+                alt="html semantica">
+        </section>
 
-       </footer>
+        <section class="contenedor" id="etiquetas-basicas">
+            <h2>Etiquetas básicas del HTML</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>h1, h2, h3, h4, h5, h6</td>
+                        <td>Títulos y subtítulos en HTML</td>
+                    </tr>
+
+                    <tr>
+                        <td>p</td>
+                        <td>Párrafos</td>
+                    </tr>
+
+                    <tr>
+                        <td>img</td>
+                        <td>Para mostrar las imágenes (src, alt)</td>
+                    </tr>
+
+                    <tr>
+                        <td>ul, ol</td>
+                        <td>Etiquetas para definir listas desordenadas y ordenadas</td>
+                    </tr>
+
+                    <tr>
+                        <td>div</td>
+                        <td>Divisores de contenido - dar estilos</td>
+                    </tr>
+
+                    <tr>
+                        <td> a </td>
+                        <td>Es redireccionar a un link fuera o dentro de nuestra página</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+
+        <section class="contenedor" id="formularios">
+            <h2>Formularios de HTML</h2>
+            <P>Son una herramienta fundamental para recopilar datos de un usuario, a través de campos como:</P>
+
+            <ul>
+                <li>Textos</li>
+                <li>casillas de texto - áreas de texto</li>
+                <li>listas desplegables</li>
+                <li>botones</li>
+            </ul>
+
+            <div>
+                <h3>Ejemplo: Formulario de inicio de sesión</h3>
+
+                <form>
+                    <label for="nombre">Nombre de usuario:</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+
+                    <label for="contrasenia">Contraseña:</label>
+                    <input type="password" id="contrasenia" placeholder="Ingresa tu contraseña" required>
+
+                    <input type="button" value="Iniciar sesión">
+                </form>
+            </div>
+
+        </section>
+        <section class="contenedor" id="tablas"> </section>
+        <section class="contenedor" id="enlaces"> </section>
+
+    </main>
+
+    <!-- pie de página -->
+    <footer>
+
+    </footer>
 </body>
+
 </html>
