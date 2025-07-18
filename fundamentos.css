@@ -9,14 +9,16 @@
 @import url("https://fonts.cdnfonts.com/css/rangile");
 @import url("https://fonts.cdnfonts.com/css/plush-trial");
 @import url("https://fonts.cdnfonts.com/css/zilla-slab");
+@import url('https://fonts.cdnfonts.com/css/sansita-one-3');
 
 :root {
-  --color-fondo: #b3a5b6;
+  --color-fondo: #e2e8f3;
   --color-texto: #040931;
   --color-enfasis: #0a2459;
   --color-enfasis2: #417aa5;
   --color-enfasis3: #1c588c;
   --color-titulo: #F4FCFE;
+  --color-borde: #c4d2e7;
   --tamaño-titulo: 30px;
 }
 
@@ -33,10 +35,66 @@ body {
   overflow-x: hidden;
 }
 
+
+
+/* -------------------HEADER------------------------ */
+
+header{
+    /* ancho */ 
+    width: 97vw ;  /* vw -> viewport width */
+    /* altura */
+    height: 10vh;  /* vh -> viewport width */
+    background-color: var(--color-texto);
+    margin: 15px; /* margen exterior */
+    border-radius: 15px; /* borde curvo */
+}
+
+nav{
+    /* como se muestran los elementos */
+    display: flex;
+    /* alinear los elementos dentro de un contenedor */
+    justify-content: center; /* centrar en x */
+    align-items: center; /* centrar en y */
+    gap: 50px; /* definir espacios entre elementos */
+}
+
+.lista{
+    display: flex;
+    gap: 30px;
+    list-style: none; /* propiedad de los ul ol */
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+a{
+  color: var(--color-titulo);
+  text-decoration: none;
+}
+
+/* --------------------MAIN------------------------- */
+
+main{
+  width: 80vw;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+h1{
+  font-family: 'Sansita One', sans-serif;
+  font-size: 50px;
+}
+
 h2 {
   font-family: "Rangile", sans-serif;
   font-size: var(--tamaño-titulo);
   color: var(--color-enfasis);
+  text-decoration: underline dotted; 
 }
 
 p,
@@ -50,42 +108,35 @@ li {
   color: var(--color-titulo);
 }
 
-/* -------------------HEADER------------------------ */
-header{
-    /* ancho */ 
-    width: 100vw ;  /* vw -> viewport width */
-    /* altura */
-    height: 10vh;  /* vh -> viewport width */
-    background-color: var(--color-texto);
+.lista2{
+  color: var(--color-enfasis);
 }
 
-nav{
-    /* como se muestran los elementos */
-    display: flex;
-    /* alinear los elementos dentro de un contenedor */
-    justify-content: center; /* centrar en x */
-    align-items: center; /* centrar en y */
-    gap: 50px;
+h1, h2{
+  /* alineación del texto */
+  text-align: center;
 }
 
-.lista{
-    display: flex;
-    gap: 30px;
+.contenedor{
+  background-color: var(--color-borde);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px; /* márgen interno */
+  gap: 20px;
 }
 
-.logo{
-    width: 50px;
-    height: 50px;
+.semantica{
+  width: 50%;
+  border-radius: 15px;
 }
 
-/* --------------------MAIN------------------------- */
-
-
-
-
-
-
-
-
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 /* -------------------FOOTER------------------------- */
